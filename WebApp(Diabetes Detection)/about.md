@@ -1,0 +1,3 @@
+-Machine Learning based Web Application, used to predict wheather a person is likely to be diabetic or not.
+-Measured on certain factors likes glucose level in body,blood pressure, age of a person,etc
+-Requirements:-Streamlit (a Python library)
