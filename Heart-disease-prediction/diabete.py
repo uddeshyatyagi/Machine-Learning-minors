@@ -1,4 +1,4 @@
-import pandas as pd
+
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -24,9 +24,9 @@ st.dataframe(df)
 st.write(df.describe())
 
 # visualize data
-check=st.checkbox("SHOW THE BAR CHART")
-if check:
-        chart=st.bar_chart(df)
+
+chart=st.bar_chart(df)
+
 
 # split data
 X=df.iloc[:,0:8].values
