@@ -24,7 +24,9 @@ st.dataframe(df)
 st.write(df.describe())
 
 # visualize data
-chart=st.bar_chart(df)
+check=st.checkbox("SHOW THE BAR CHART")
+if check:
+        chart=st.bar_chart(df)
 
 # split data
 X=df.iloc[:,0:8].values
