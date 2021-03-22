@@ -24,9 +24,20 @@ st.dataframe(df)
 st.write(df.describe())
 
 # visualize data
-check=st.checkbox("SHOW THE BAR CHART")
-if check:
-        chart=st.bar_chart(df)
+
+radio1=st.radio("Display Graph",('Bar Chart','Line Chart'))
+if radio1=='Bar Chart':
+    #check1=st.checkbox("Show Bar Chart")
+    #if check1:
+        st.bar_chart(df)
+else:
+    #check2=st.checkbox("Show Line Chart")
+    #if check2:
+    st.line_chart(df)
+
+check3=st.checkbox("Show Area Chart")
+if check3:
+    st.area_chart(df,height=0,width=0,use_container_width=True)
 
 # split data
 X=df.iloc[:,0:8].values
