@@ -20,12 +20,12 @@ st.subheader('Data information: ')
 
 # show data as table
 st.dataframe(df)
-
+print('')
 st.write(df.describe())
 
 # visualize data
-
-radio1=st.radio("Display Graph",('Bar Chart','Line Chart'))
+st.subheader('Display Graph')
+radio1=st.radio(" ",('Bar Chart','Line Chart'))
 if radio1=='Bar Chart':
     #check1=st.checkbox("Show Bar Chart")
     #if check1:
