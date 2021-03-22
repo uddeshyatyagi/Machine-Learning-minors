@@ -91,6 +91,6 @@ st.subheader('Classification: ')
 st.write(prediction) 
 
 if prediction==0:
-    st.write('Healthy :)')
+    st.success('Healthy :)')
 if prediction==1:
-    st.write('Diabetic :(')
+    st.warning('Diabetic :(')
